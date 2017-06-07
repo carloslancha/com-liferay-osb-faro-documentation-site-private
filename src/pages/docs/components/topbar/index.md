@@ -18,8 +18,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero,
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.
 
-```javascript
-alert('Hello World');
+```soy
+{call Topbar.render}
+	{param backURL: $backURL /}
+	{param pathThemeImages: $pathThemeImages /}
+	{param title kind="html"}{msg desc=""}title{/msg}{/param}
+{/call}
 ```
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.
